@@ -12,7 +12,7 @@
     /* направление расположения блоков относительно Main axis (ось ОХ) слева направо */
     flex-direction: row;
     /* направление блоков относительно Cross axis (ось ОY) по центру */
-    align-items: center;
+    align-items: center; 
 }
 
 .header-logo {
@@ -21,6 +21,10 @@
     align-items: center;
     /* размер блока с лого и названием(его вес) относительно других блоков */
     flex-grow: 1;
+}
+
+.logo-title {
+    text-decoration: underline;
 }
 
 .logo-img {
@@ -57,31 +61,3 @@
     height: 75px;
 }
 
-.footer-search {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    align-items: center;
-}
-
-.footer-search-input {
-    height: 35px;
-    flex-grow: 3;
-    margin-right: 20px;
-    border-radius: 10px;
-    border: none;
-}
-
-.footer-search-button {
-    height: 35px;
-    flex-grow: 2;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-color: white;
-    cursor: pointer;
-}
-
-.footer-search-button:hover {
-    border-color: red;
-}
