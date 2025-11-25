@@ -1,0 +1,222 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1980px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background: blue;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner-title, .banner-description, .banner-opisanie {
+    text-align: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 48px;
+}
+
+.banner-opisanie {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.banner-section {
+    padding: 100px 0;
+    background: url(img/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*CARDS*/
+
+.cards-section {
+    padding: 50px 0px;
+}
+
+.cards-title, .cards-description {
+    color: #13759c;
+    text-align: center;
+}
+
+.card {
+    padding: 25px;
+    margin-top: 25px;
+    width: 25%;
+    background: white;
+    box-shadow: 0px 2px 7px 0px #9e90ff;
+    text-align: start;
+/* box-shadow: 0px 2px 7px 0px
+          1.  0px - отступ по оси X
+          2.  2px - отступ по оси Y
+          3.  7px - радиус размытия
+          4.  0px - растяжение */
+}
+
+.card-button {
+    text-align: center;
+    background: #0008e5;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 2px 10px 30px 0px #60579c;
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.card-title, .card-text {
+    margin-bottom: 10px;
+}
+
+
+
+/* Подвал */
+
+.footer {
+    background: url(img/footer-bg.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.copyright {
+    color: white;
+}
+
+/* экспипемент с ползунком */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #60579c;
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px 0px black;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 850px) {
+    .cards-row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .logo-img {
+        display: none;
+    }
+    .header-logo {
+        display: none;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .card {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-search, .footer-search-input, .footer-search-button, .social-networks {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .footer-search, .footer-row {
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .banner-title {
+        font-size: xx-large;
+    }
+}
+
+
+
+/*выпадающее меню */
+
+.dropbtn {
+    color: rgb(0, 0, 0);
+    background: aqua;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    
+    text-align: center;
+    background: aqua;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
