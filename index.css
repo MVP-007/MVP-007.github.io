@@ -141,19 +141,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media screen and (max-width: 850px){
+    .card {
+        width: auto;
+    }
     .logo-img {
         display: none;
     }
     .header-logo {
         display: none;
     }
-
     .menu-item {
         display: none;
-    }
-
-    .card {
-        width: auto;
     }
 }
 
@@ -219,4 +217,4 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
+}                                                                                                                                                                                                                               
